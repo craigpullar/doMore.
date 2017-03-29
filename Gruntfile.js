@@ -87,7 +87,7 @@ module.exports = function(grunt) {
 			stderr: false
 		},
 		target: {
-			command: 'nodemon --watch ./client/ ./server/server.js'
+			command: 'nodemon --watch ./ ./server/server.js'
 		}
 	}
 });
