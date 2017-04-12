@@ -1,4 +1,3 @@
-
 class Database {
 
 	constructor(){
@@ -20,8 +19,3 @@ class Database {
 }
 
 module.exports = new Database();
-
-
-
-
-

@@ -9,10 +9,13 @@ const server = new Hapi.Server();
 
 server.connection({ 
     host: 'localhost', 
-    port: 8000 
-});
+    port: 8000, 
+    router : {
+        stripTrailingSlash : true
+    },
 
-/* Register plugins */
+});
+/* register plugins */
 server.register(require('vision'), (err) => {
 
     if (err) {
@@ -36,8 +39,6 @@ server.views({
     //helpersPath: 'views/helpers',
     partialsPath: './client/partials'
 });
-
-
 
 
 //Set routes

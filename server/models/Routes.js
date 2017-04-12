@@ -6,8 +6,8 @@ class Routes {
     addRoute(method, path, handler) {
         let route = {
             method : method,
-            path : path,
-            handler : handler
+            path : path,     
+            handler : handler,
         };
 
         this.routes.push(route);
