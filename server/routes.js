@@ -28,9 +28,15 @@ routes.addRoute('GET','/js/deploy.js', (request,reply) => {
 routes.addRoute('GET', '/css/deploy.css', (request,reply) => {
 	reply.file('./client/css/deploy.css');
 });
-routes.addRoute('GET', '/populate_db', (request,reply) => {
-	let populate_db = require('./populate');	
-	populate_db(db, db.conn);
+// routes.addRoute('GET', '/populate_db', (request,reply) => {
+// 	let populate_db = require('./populate');	
+// 	populate_db(db, db.conn);
+// });
+routes.addRoute('GET','/login', (request, reply) => {
+	var data = {
+		title: 'login',
+	};
+	return reply.view('login', data);
 });
 
 

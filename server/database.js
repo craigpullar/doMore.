@@ -13,6 +13,7 @@ class Database {
 			if (err) console.log(err);
 			this.conn = conn;
 			this.conn.db = name;
+			this.def = this.r.db(name);
 			console.log('Connected to db: ' + this.name);
 		});
 	}

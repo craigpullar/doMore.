@@ -98,6 +98,49 @@ let routes = (API, db, routes) => {
 		});
 	});
 
+	//User Routes
+	routes.addRoute('GET', '/api/User', (request, reply) => {
+		API.User.getAll(db, (results)=> {
+			reply(results);
+		});
+	});
+	routes.addRoute('GET', '/api/User/{id}', (request, reply) => {
+		API.User.filterByValue(db, 'id', request.params.id, (results)=> {
+			reply(results);
+		});
+	});
+	routes.addRoute('GET', '/api/User/{field}/{value}', (request,reply) => {
+		API.User.filterByValue(db, request.params.field,  request.params.value, (results)=> {
+			reply(results);
+		});
+	});
+	routes.addRoute('POST', '/api/User', (request,reply) => {	
+		API.User.add(db,request.payload,(results) => {
+			reply(results);
+		});
+	});
+	routes.addRoute('DELETE', '/api/User/{id}', (request,reply) => {	
+		API.User.delete(db,request.params.id,(results) => {
+			reply(results);
+		});
+	});
+	routes.addRoute('UPDATE', '/api/User/{id}', (request,reply) => {
+		API.User.updateById(db, request.params.id, request.payload, (results)=> {
+			reply(results);
+		});
+	});
+	routes.addRoute('POST', '/api/login', (request, reply) => {
+		API.User.login(db,request.payload,(err,results)=> {
+			if (err) reply('Login unsuccessful');
+			request.auth.session.set(results);
+			reply.redirect('/');
+		});
+	});
+	routes.addRoute('POST', '/api/logout', (request, reply) => {
+		request.auth.session.clear();
+		reply.redirect('/login');
+	});
+
 };
 
 module.exports = routes;
