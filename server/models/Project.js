@@ -3,7 +3,7 @@ class Project {
 		this.id = id || -1;
 	}
 
-	create(name,due_date,git_releases,links,notes, git_repo, status, created){
+	create(name,due_date,git_releases,links,notes, git_repo, status, created, user){
 		this.name = name;
 		this.due_date = due_date;
 		this.git_releases = git_releases;
@@ -12,6 +12,7 @@ class Project {
 		this.created = created;
 		this.status = status;
 		this.git_repo = git_repo;
+		this.user = user;
 	}
 
 	createFromBundle(bundle) {
@@ -23,6 +24,7 @@ class Project {
 		this.created = bundle.created;
 		this.status = bundle.status;
 		this.git_repo = bundle.git_repo;
+		this.user = bundle.user
 	}
 
 	getBundle() {
@@ -35,7 +37,8 @@ class Project {
 			notes : this.notes,
 			created : this.created,
 			status : this.status,
-			git_repo : this.git_repo
+			git_repo : this.git_repo,
+			user : this.user
 		};
 	}
 

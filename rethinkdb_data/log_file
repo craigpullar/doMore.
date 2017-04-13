@@ -207,3 +207,23 @@
 2017-04-13T11:36:37.657475000 9363.992685s notice: All client connections closed.
 2017-04-13T11:36:37.657480000 9363.992690s notice: Shutting down storage engine... (This may take a while if you had a lot of unflushed data in the writeback cache.)
 2017-04-13T11:36:37.670666000 9364.005876s notice: Storage engine shut down.
+2017-04-13T11:52:13.152193000 0.097794s notice: Running rethinkdb 2.3.5 (CLANG 7.3.0 (clang-703.0.31))...
+2017-04-13T11:52:13.168753000 0.114348s notice: Running on Darwin 15.6.0 x86_64
+2017-04-13T11:52:13.168800000 0.114394s notice: Loading data from directory /Users/cpullar/Documents/Development/Side-Projects/doMore/rethinkdb_data
+2017-04-13T11:52:13.197540000 0.143134s info: Automatically using cache size of 2166 MB
+2017-04-13T11:52:13.198893000 0.144487s notice: Listening for intracluster connections on port 29015
+2017-04-13T11:52:13.245546000 0.191140s notice: Listening for client driver connections on port 28015
+2017-04-13T11:52:13.245625000 0.191219s notice: Listening for administrative HTTP connections on port 8080
+2017-04-13T11:52:13.245628000 0.191221s notice: Listening on cluster addresses: 127.0.0.1, ::1
+2017-04-13T11:52:13.245629000 0.191223s notice: Listening on driver addresses: 127.0.0.1, ::1
+2017-04-13T11:52:13.245639000 0.191233s notice: Listening on http addresses: 127.0.0.1, ::1
+2017-04-13T11:52:13.245641000 0.191234s notice: To fully expose RethinkDB on the network, bind to all addresses by running rethinkdb with the `--bind all` command line option.
+2017-04-13T11:52:13.245643000 0.191236s notice: Server ready, "HA501705_oxa" 5ee4cb84-7262-42fc-b073-4afc0f80a6a0
+2017-04-13T11:52:14.376026000 1.321655s info: Table d6d29df3-0a4a-43d2-8da1-1d0e3bca56fc: Starting a new Raft election for term 6.
+2017-04-13T11:52:14.387085000 1.332715s info: Table d6d29df3-0a4a-43d2-8da1-1d0e3bca56fc: This server is Raft leader for term 6. Latest log index is 15.
+2017-04-13T11:52:14.464749000 1.410378s info: Table 4293cc9f-58c7-42a2-8236-1dbe0e54e145: Starting a new Raft election for term 6.
+2017-04-13T11:52:14.475250000 1.420913s info: Table 4293cc9f-58c7-42a2-8236-1dbe0e54e145: This server is Raft leader for term 6. Latest log index is 15.
+2017-04-13T11:52:14.832515000 1.778178s info: Table be98a33b-8eed-4d30-81da-34a317cec97f: Starting a new Raft election for term 6.
+2017-04-13T11:52:14.843587000 1.789250s info: Table be98a33b-8eed-4d30-81da-34a317cec97f: This server is Raft leader for term 6. Latest log index is 15.
+2017-04-13T11:52:14.878647000 1.824310s info: Table e9474bc9-f5b1-4c8f-bb59-6bac9f3864cd: Starting a new Raft election for term 3.
+2017-04-13T11:52:14.889187000 1.834850s info: Table e9474bc9-f5b1-4c8f-bb59-6bac9f3864cd: This server is Raft leader for term 3. Latest log index is 6.

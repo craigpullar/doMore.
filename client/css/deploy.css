@@ -19,7 +19,7 @@
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -100px); }
+    transform: translate(-50%, -150px); }
     #loginPage .loginForm h1 {
       font-size: 3rem;
       color: #fff;
