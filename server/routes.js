@@ -25,6 +25,10 @@ routes.addRoute('GET','/', (request,reply) => {
 routes.addRoute('GET','/js/deploy.js', (request,reply) => {
 	reply.file('./client/js/deploy.js');
 });
+routes.addRoute('GET','/imgs/{filename}', (request,reply) => {
+	let file = request.params.filename;
+	reply.file(`./client/imgs/${file}`);
+});
 routes.addRoute('GET', '/css/deploy.css', (request,reply) => {
 	reply.file('./client/css/deploy.css');
 });

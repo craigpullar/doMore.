@@ -51,11 +51,13 @@
 			let username = payload.username;
 			let password = payload.password;
 
-			this.filterByValue(db,'username', username,(results) => {
-				if(results.password == password) 
-					callback(null, results);
+
+			options.filterByValue(db,'username', username,(results) => {
+				if(!results.length) callback(1, null);
+				if(results[0].password == password) 
+					callback(null, results[0]);
 				else 
-					callback('no match', results);
+					callback(2, results[0]);
 				
 			});
 		},

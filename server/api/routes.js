@@ -131,13 +131,11 @@ let routes = (API, db, routes) => {
 	});
 	routes.addRoute('POST', '/api/login', (request, reply) => {
 		API.User.login(db,request.payload,(err,results)=> {
-			if (err) reply('Login unsuccessful');
-			request.auth.session.set(results);
+			if (err) reply.redirect(`/login?error=${err}`);
 			reply.redirect('/');
 		});
 	});
 	routes.addRoute('POST', '/api/logout', (request, reply) => {
-		request.auth.session.clear();
 		reply.redirect('/login');
 	});
 
