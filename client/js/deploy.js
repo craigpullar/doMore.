@@ -376,7 +376,17 @@ var ProjectFilter = function (_React$Component2) {
 						' ',
 						this.state.filter
 					),
-					' Projects'
+					' Projects',
+					_react2.default.createElement(
+						'a',
+						{ className: 'new button', href: '/new-project' },
+						'New Project   ',
+						_react2.default.createElement(
+							'i',
+							{ className: 'material-icons' },
+							'note_add'
+						)
+					)
 				),
 				_react2.default.createElement(
 					'ul',

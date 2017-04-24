@@ -72,4 +72,25 @@
 		color:#fff;
 	}
 
+	.new.button {
+		padding:10px;
+		color:#fff;
+		float:right;
+		background:#2ecc71;
+		text-decoration: none;
+		font-size:1rem;
+		line-height:1.2rem;
+
+
+		i {
+			font-size:1.2rem;
+			line-height:1.2rem;
+			margin-left:5px;
+		}
+
+		&:hover {
+			background:#27ae60;
+		}
+	}
+
 }

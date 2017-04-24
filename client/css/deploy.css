@@ -858,6 +858,20 @@ header a {
   #projectsPage .headers {
     padding: 20px;
     color: #fff; }
+  #projectsPage .new.button {
+    padding: 10px;
+    color: #fff;
+    float: right;
+    background: #2ecc71;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.2rem; }
+    #projectsPage .new.button i {
+      font-size: 1.2rem;
+      line-height: 1.2rem;
+      margin-left: 5px; }
+    #projectsPage .new.button:hover {
+      background: #27ae60; }
 
 * {
   box-sizing: border-box;
@@ -866,5 +880,27 @@ header a {
 html, body {
   padding: 0px;
   margin: 0px; }
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: 'liga'; }
 
 /*# sourceMappingURL=deploy.css.map */

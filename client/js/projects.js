@@ -94,7 +94,9 @@ class ProjectFilter extends React.Component {
 
 		return (
 		<div className="container">
-		<h1><span className="filter" onClick={this.toggleDropdown} ><span className="arrow down" ref="arrowDown">▼</span><span className="arrow up hidden" ref="arrowUp">▲</span> {this.state.filter}</span> Projects</h1>
+		<h1><span className="filter" onClick={this.toggleDropdown} ><span className="arrow down" ref="arrowDown">▼</span><span className="arrow up hidden" ref="arrowUp">▲</span> {this.state.filter}</span> Projects
+		<a className="new button" href="/new-project">New Project   <i className="material-icons">note_add</i></a>
+		</h1>
 		<ul className="dropdown hidden" ref="dropdown">
 		<li onClick={this.changeFilterToAll}>All</li>
 		<li onClick={this.changeFilterToToday}>Todays</li>
