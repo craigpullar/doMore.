@@ -12,13 +12,7 @@ API.routes(API, db, routes);
 
 
 //Pages Routes
-routes.addRoute('GET','/', (request,reply) => {
-	var data = {
-		title: 'This is Index!',
-		message: 'Hello, World. You crazy handlebars layout'
-	};
-	return reply.view('index', data);
-});
+
 
 
 //Resource Routes
@@ -41,6 +35,13 @@ routes.addRoute('GET','/login', (request, reply) => {
 		title: 'login',
 	};
 	return reply.view('login', data);
+});
+
+routes.addRoute('GET','/', (request, reply) => {
+	var data = {
+		title: 'Projects',
+	};
+	return reply.view('projects', data);
 });
 
 

@@ -1,0 +1,75 @@
+/* View : Projects */
+
+#projectsPage {
+	min-height: 100%;
+	min-width:100%;
+	background:#34495E;
+
+	.ProjectCard {
+		background:#fff;
+		padding:20px;
+		@include box-shadow(2px 2px 5px 0px rgba(0,0,0,0.4));
+
+		&.2 {
+			background-color:#9B59B6;
+			color:#fff;
+		}
+		&.3 {
+			background-color:#9B59B6;
+			color:#fff;
+		}
+		&.4 {
+			background-color:#27AE60;
+			color:#fff;
+		}
+		&.today {
+			background-color:#E74C3C;
+			color:#fff;
+		}
+
+
+	}
+
+	.filterSelector {
+		h1 {
+			color:#519CAD;
+			font-weight:300;
+			font-size:3rem;
+			span.filter {
+				color:#fff;
+				cursor:pointer;
+
+				.arrow {
+					font-size:1rem;
+					top:-5px;
+					position:relative;
+
+
+				}
+			}
+		}
+
+		.dropdown {
+			list-style:none;
+			color:#fff;
+			font-size:1.6rem;
+			padding:0px;
+			font-weight:300;
+			margin:0px;
+			position:relative;
+			top:-20px;
+			li {
+				padding: 5px 0px;
+				cursor:pointer;
+				&:hover {
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+	.headers {
+		padding:20px;
+		color:#fff;
+	}
+
+}

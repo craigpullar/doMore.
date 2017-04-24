@@ -13,3 +13,9 @@
 		@content
 	}
 }
+
+@mixin box-shadow($rule) {
+	-webkit-box-shadow: $rule;
+	-moz-box-shadow: $rule;
+	box-shadow: $rule;
+}

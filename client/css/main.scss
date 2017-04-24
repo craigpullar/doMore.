@@ -1,10 +1,13 @@
 /* main */
 @import 'globals';
 @import 'mixins';
+@import 'grid';
 @import 'partials';
 @import 'layout_default';
 @import 'view_index';
 @import 'view_login';
+@import 'view_projects';
+
 
 * {
 	box-sizing:border-box;
