@@ -43,6 +43,12 @@ routes.addRoute('GET','/', (request, reply) => {
 	};
 	return reply.view('projects', data);
 });
+routes.addRoute('GET','/new-project', (request, reply) => {
+	var data = {
+		title: 'New Project',
+	};
+	return reply.view('newProject', data);
+});
 
 
 

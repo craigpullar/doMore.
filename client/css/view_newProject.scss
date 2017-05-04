@@ -1,0 +1,94 @@
+/* View : New Project */
+
+#NewProjectPage {
+	min-height: 100%;
+	min-width:100%;
+	background:#16A085;
+	color:#fff;
+
+	h1 {
+		margin-bottom:50px;
+	}
+
+	form {
+		p.error {
+			padding:10px 20px;
+			display:inline-block;
+			color:#fff;
+			background:#e74c3c;
+			font-weight:300;
+		}
+		h4 {
+			margin-bottom:0px;
+		}
+		i {
+
+
+			&.add_link {
+				margin-top:12px;
+				margin-left:30px;
+				cursor:pointer;
+				display:block;
+				font-size:2rem;
+				line-height:2rem;
+
+			}
+		}
+
+		.link {
+			p {
+
+				padding:10px;
+				border:1px solid #fff;
+				color:#fff;
+				font-weight:300;
+			}
+
+			i {
+				margin-top:12px;
+				margin-left:30px;
+				cursor:pointer;
+				display:block;
+				font-size:2rem;
+				line-height:2rem;
+			}
+			
+		}
+
+		input:not([type="submit"]) {
+			width:100%;
+			font-size:1rem;
+			line-height: 1.2rem;
+			background:none;
+			border:1px solid #fff;
+			padding:10px;
+			margin:10px auto;
+			font-weight:300;
+			color:#fff;
+			@include placeholder {
+				color:#fff;
+
+			}
+		}
+
+		input[type="submit"] {
+			padding:15px 20px;
+			background:#fff;
+			border:1px solid #fff;
+			@include box-shadow(2px 2px 5px 0px rgba(0,0,0,0.4));
+			float:right;
+			margin-top:10px;
+			font-size:1rem;
+			line-height: 1.2rem;
+			cursor:pointer;
+
+			&:hover {
+				background:none;
+				color:#fff;
+				@include box-shadow(none);
+
+			}
+
+		}
+	}
+}

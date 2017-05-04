@@ -1,6 +1,6 @@
 {
   "name": "domore",
-  "version": "0.5.1",
+  "version": "0.6.0",
   "description": "A project workflow for developers",
   "main": "index.html",
   "scripts": {
