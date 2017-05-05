@@ -611,10 +611,21 @@ var ProjectCard = function (_React$Component) {
 	}, {
 		key: 'getDate',
 		value: function getDate() {
+
+			var formatDate = function formatDate(date) {
+				var monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+				var day = date.getDate();
+				var monthIndex = date.getMonth();
+				var year = date.getFullYear();
+
+				return day + ' ' + monthNames[monthIndex] + ' ' + year;
+			};
+
 			var date = new Date(this.props.date.date);
 			var today = new Date();
-			if (date.setHours(0, 0, 0, 0) == today.setHours(0, 0, 0, 0)) date = "Today";else if (date.setHours(0, 0, 0, 0) > today.setHours(0, 0, 0, 0)) date = "Overdue";
-			return date;
+			if (date.setHours(0, 0, 0, 0) === today.setHours(0, 0, 0, 0)) return "Today";else if (date.setHours(0, 0, 0, 0) < today.setHours(0, 0, 0, 0)) return "Overdue";
+			return formatDate(date);
 		}
 	}, {
 		key: 'getStatus',

@@ -818,6 +818,7 @@ header a {
   #projectsPage .ProjectCard {
     background: #fff;
     padding: 20px;
+    margin: 15px 0px;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4);
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.4); }
